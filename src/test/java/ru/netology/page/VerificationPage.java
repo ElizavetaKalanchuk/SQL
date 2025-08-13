@@ -3,6 +3,7 @@ package ru.netology.page;
 import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class VerificationPage {
@@ -15,7 +16,7 @@ public class VerificationPage {
     }
 
     public void verifyErrorNotificationVisiblity() {
-        errorNotification.shouldBe(visible);
+        errorNotification.shouldBe(visible)
                 .shouldHave(text("Ошибка"))
                 .shouldHave(text("Неверный код"));
     }
