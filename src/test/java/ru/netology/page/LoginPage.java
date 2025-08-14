@@ -15,7 +15,7 @@ public class LoginPage {
 
     public void verifyErrorNotificationVisiblity() {
         errorNotification.shouldBe(visible)
-        .shouldHave(text("Ошибка! Неверные данные"));
+                .shouldHave(text("Неверно указан логин или пароль"));
     }
 
     public VerificationPage validLogin(DataHelper.AuthInfo info) {

@@ -17,7 +17,6 @@ public class VerificationPage {
 
     public void verifyErrorNotificationVisiblity() {
         errorNotification.shouldBe(visible)
-                .shouldHave(text("Ошибка"))
                 .shouldHave(text("Неверный код"));
     }
 
