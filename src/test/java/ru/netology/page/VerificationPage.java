@@ -17,7 +17,7 @@ public class VerificationPage {
 
     public void verifyErrorNotificationVisiblity() {
         errorNotification.shouldBe(visible)
-                .shouldHave(text("Неверный код"));
+                .shouldHave(text("Ошибка\nОшибка! Неверно указан код! Попробуйте ещё раз."));
     }
 
     public DashboardPage validVerify(String verificationCode) {
